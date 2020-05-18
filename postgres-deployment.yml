@@ -16,7 +16,7 @@ spec:
       labels:
           name: postgres-pod
           app: demo-voting-app                     
-      spec:
+    spec:
           containers:
               - name: postgres-app
                 image: postgres:9.4
@@ -26,4 +26,4 @@ spec:
                   - name:  POSTGRES_PASSWORD
                     value: "postgres"
                 ports:
-                  - containerPort: 5432
+                  - containerPort: 5432  
