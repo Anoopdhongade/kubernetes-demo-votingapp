@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: worker-deployement
+  name: worker-deployment
   labels:
     app: demo-voting-app
 spec:
@@ -17,6 +17,6 @@ spec:
           name: worker-app-pod
           app: demo-voting-app                  
     spec:
-      containers:
-          - name: worker-app
-            image: dockersamples/examplevotingapp_worker
+        containers:
+            - name: worker-app
+              image: dockersamples/examplevotingapp_worker
